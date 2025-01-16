@@ -44,10 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
         displayCard();
     });
 
-    // document.getElementById('prev').addEventListener('click', () => {
-    //     currentCard = (currentCard - 1 + flashcard.length) % flashcard.length;
-    //     displayCard();
-    // });
+    document.getElementById('previous').addEventListener('click', () => {
+        currentCard = (currentCard - 1 + flashcard.length) % flashcard.length;
+        displayCard();
+    });
     document.getElementById('flashcard').addEventListener('click', () => {
         flashcardElement.classList.toggle('is-flipped');
     })
