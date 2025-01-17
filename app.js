@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchQuestions();
     async function fetchQuestions() {
         try {
-            const response = await fetch('https://script.google.com/macros/s/AKfycbxSqCtpJejASUaHfSDoJLoqdCsQ7mAvwY0hDjf1pRDX7HM9Y_8txugTs3DbV_Rc-YYSBw/exec');
+            const response = await fetch('https://script.google.com/macros/s/AKfycbzejQV3xH2bZzB6qp21I9EWWee3lhDJLl4CIM0E2-3bBx8O87kDYwMans90mLTEC8fWjQ/exec');
             const data = await response.json();
             flashcard = data.data;
             displayCard();
