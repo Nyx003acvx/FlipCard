@@ -1,26 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const flashcard = [
-        {
-            question: 'What is the capital of Bangladesh?',
-            answer: 'Dhaka'
-        },
-        {
-            question: 'What is the capital of Japan?',
-            answer: 'Tokyo'
-        },
-        {
-            question: 'What is the capital of India?',
-            answer: 'Delhi'
-        },
-        {
-            question: 'What is the capital of Pakistan?',
-            answer: 'Islamabad'
-        },
-        {
-            question: 'What is Farhan?',
-            answer: 'Pervert'
+
+    // fetch('question.json')
+    // .then(response => response.json())
+    // .then(data => {
+    //     flashcard = data.data;
+    //     displayCard();
+    // })
+    // .catch(error => console.error(error));
+
+    fetchQuestions();
+    async function fetchQuestions() {
+        try {
+            const response = await fetch('https://script.google.com/macros/s/AKfycbxSqCtpJejASUaHfSDoJLoqdCsQ7mAvwY0hDjf1pRDX7HM9Y_8txugTs3DbV_Rc-YYSBw/exec');
+            const data = await response.json();
+            flashcard = data.data;
+            displayCard();
+        } catch (error) {
+            console.error(error);
         }
-    ];
+    }
+    
     let currentCard = 0;
 
     const flashcardElement = document.getElementById('flashcard');
@@ -54,5 +53,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     displayCard();
 })
-
 
