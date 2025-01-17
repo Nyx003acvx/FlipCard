@@ -79,3 +79,18 @@ body{
 .controls button:hover{
     transform: scale(1.2);
 }
+
+@media (max-width: 768px) {
+    .flashcard-container{
+        width: 80vw;
+    }
+
+    .flashcard{
+        width: 100%;
+        height: 150px;
+    }
+}
+
+.flashcard-container, .flashcard, .front, .back{
+    overflow: hidden;
+}
