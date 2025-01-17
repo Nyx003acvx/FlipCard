@@ -59,11 +59,14 @@ body{
 
 .back{
     transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
 }
 
 .front{
     display: flex;
     color: #ffffff;
+    justify-content:center;
 }
 
 /* .flashcard p{
