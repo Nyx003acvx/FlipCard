@@ -38,8 +38,7 @@ body{
 }
 
 .flashcard div{
-    container-type: inline-size;
-    display: flex;
+    display: flexbox;
     position: absolute;
     width: 100%;
     height: 90%;
