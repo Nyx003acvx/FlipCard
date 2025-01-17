@@ -90,7 +90,3 @@ body{
         height: 150px;
     }
 }
-
-.flashcard-container, .flashcard, .front, .back{
-    overflow: hidden;
-}
