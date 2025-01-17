@@ -42,7 +42,6 @@ body{
     backface-visibility: hidden;
     border-radius: 20px;
     background: linear-gradient(120deg, #b7b6c3, #554949);
-    overflow: scroll;
 }
 
 .back{
