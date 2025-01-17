@@ -15,20 +15,14 @@ body{
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    max-width: 360px;
     text-align: center;
     margin-bottom: 60px;
-    overflow: scroll;
-    scrollbar-width: none;
 }
 
 .flashcard{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    height: 90%;
+    width: 90%;
+    min-height: 180px;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.5s;
@@ -38,12 +32,10 @@ body{
 
 .flashcard.is-flipped{
     transform: rotateY(180deg);
-    height: 250px;
 }
 
 .flashcard div{
     display: flex;
-    flex-direction: column;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -52,7 +44,6 @@ body{
     overflow: auto;
     scrollbar-width: none;
     margin: 0 auto;
-    margin-top: 0px;
     align-items: center;
     justify-content: center;
     background: linear-gradient(120deg, #b7b6c3, #554949);
@@ -61,10 +52,6 @@ body{
 .back{
     transform: rotateY(180deg);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #000000;
 }
 
 .front{
@@ -74,10 +61,11 @@ body{
     align-items: center;
     color: #ffffff;
 }
+
 .flashcard p {
     font-size: 1rem;
     width: 100%;
-    min-height: 1rem;
+    height: 99px;
     overflow-x: none;
     display: flex;
     text-wrap: wrap;
@@ -112,7 +100,7 @@ body{
     }
 
     .flashcard{
-        width: 100%;
-        height: 250px;
+        width: 90%;
     }
 }
+
