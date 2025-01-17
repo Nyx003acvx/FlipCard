@@ -25,7 +25,7 @@ body{
 
 .flashcard{
     width: 100%;
-    height: 180px;
+    height: 90%;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.5s;
@@ -35,6 +35,7 @@ body{
 
 .flashcard.is-flipped{
     transform: rotateY(180deg);
+    height: 250px;
 }
 
 .flashcard div{
@@ -47,7 +48,7 @@ body{
     overflow: auto;
     scrollbar-width: none;
     margin: 0 auto;
-    margin-top: 0;
+    margin-top: 0px;
     align-items: center;
     justify-content: center;
     background: linear-gradient(120deg, #b7b6c3, #554949);
@@ -90,13 +91,13 @@ body{
     transform: scale(1.2);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .flashcard-container{
-        width: 40%;
+        width: 75%;
     }
 
     .flashcard{
         width: 100%;
-        height: 150px;
+        height: 250px;
     }
 }
